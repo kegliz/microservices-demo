@@ -1,0 +1,38 @@
+resources:
+- kubernetes-manifests.yaml
+namespace: microservices-demo
+images:
+- name: gcr.io/google-samples/microservices-demo/emailservice
+  newName: docker.io/zkegli/emailservice
+  newTag: master
+- name: gcr.io/google-samples/microservices-demo/checkoutservice
+  newName: docker.io/zkegli/checkoutservice
+  newTag: master
+- name: gcr.io/google-samples/microservices-demo/recommendationservice
+  newName: docker.io/zkegli/recommendationservice
+  newTag: master
+- name: gcr.io/google-samples/microservices-demo/frontend
+  newName: docker.io/zkegli/frontend
+  newTag: master
+- name: gcr.io/google-samples/microservices-demo/paymentservice
+  newName: docker.io/zkegli/paymentservice
+  newTag: master
+- name: gcr.io/google-samples/microservices-demo/productcatalogservice
+  newName: docker.io/zkegli/productcatalogservice
+  newTag: master
+- name: gcr.io/google-samples/microservices-demo/carteservice
+  newName: docker.io/zkegli/cartservice
+  newTag: master
+- name: gcr.io/google-samples/microservices-demo/loadgenerator
+  newName: docker.io/zkegli/loadgenerator
+  newTag: master
+- name: gcr.io/google-samples/microservices-demo/currencyservice
+  newName: docker.io/zkegli/currencyservice
+  newTag: master
+- name: gcr.io/google-samples/microservices-demo/shippingservice
+  newName: docker.io/zkegli/shippingservice
+  newTag: master
+- name: gcr.io/google-samples/microservices-demo/adservice
+  newName: docker.io/zkegli/adservice
+  newTag: master 
+
